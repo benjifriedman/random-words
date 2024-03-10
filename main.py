@@ -41,15 +41,9 @@ def decrease_font():
     if font_size > 8:  # Prevent the font size from becoming too small
         font.config(size=font_size)
 
-# Right-click context menu actions
-def cut_text(event=None):
-    output.event_generate("<<Cut>>")
-
+# Right-click context menu action
 def copy_text(event=None):
     output.event_generate("<<Copy>>")
-
-def paste_text(event=None):
-    output.event_generate("<<Paste>>")
 
 # Create the right-click context menu
 def show_context_menu(event):
